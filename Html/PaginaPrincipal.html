@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall Of 4 - Sua Loja de Esportes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../Css/Body.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="../Html/PaginaPrincipal.html"><img src="../images/logo.jpeg" alt="Logo" class="logo"></a></li>
+                    <li><a href="../Html/PaginaPrincipal.html">Início</a></li>
+                    <li><a href="../Html/Produtos.html">Produtos</a></li>
+                    <li><a href="../Html/Carrinho.html">Carrinho</a></li>
+                    <li><a href="../Html/Servicos.html">Serviços</a></li>
+                    <li><a href="../Html/Conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar produtos...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo à Hall Of 4</h1>
+                <p>Descubra as melhores marcas esportivas com preços imbatíveis</p>
+                <a href="../Html/Produtos.html" class="cta-button">Explorar Produtos</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="products-grid">
+                <!-- Product cards will be dynamically generated -->
+            </div>
+        </section>
+    </main>
+
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Dark mode toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        let isDark = false;
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+
+        // Dynamic product loading
+        const products = [
+            {
+                image: '../images/image02Tenis.webp',
+                title: 'Tênis Esportivo Premium',
+                price: 'R$ 299,99'
+            },
+            // Add more products...
+        ];
+
+        const productsGrid = document.querySelector('.products-grid');
+        
+        products.forEach(product => {
+            const productCard = `
+                <div class="product-card" data-aos="fade-up">
+                    <img src="${product.image}" alt="${product.title}" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">${product.title}</h3>
+                        <p class="product-price">${product.price}</p>
+                    </div>
+                </div>
+            `;
+            productsGrid.innerHTML += productCard;
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('.search-container input');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            // Implement search logic here
+        });
+    </script>
+</body>
+</html>

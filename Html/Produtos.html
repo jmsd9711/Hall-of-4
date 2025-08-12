@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../Css/Body.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="../Html/PaginaPrincipal.html"><img src="../images/logo.jpeg" alt="Logo" class="logo"></a></li>
+                    <li><a href="../Html/PaginaPrincipal.html">Início</a></li>
+                    <li><a href="../Html/Produtos.html">Produtos</a></li>
+                    <li><a href="../Html/Carrinho.html">Carrinho</a></li>
+                    <li><a href="../Html/Servicos.html">Serviços</a></li>
+                    <li><a href="../Html/Conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar produtos..." id="BarraDePesquisa">
+                <button id="BarraBotao">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Conteúdo da página de produtos -->
+        <section class="products-section">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../images/image01Tenis.webp" alt="Tênis Esportivo" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Tênis Esportivo</h3>
+                        <p class="product-price">R$ 99,99</p>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/image02Tenis.webp" alt="Tênis Premium" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Tênis Premium</h3>
+                        <p class="product-price">R$ 199,99</p>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/image01Camisas.webp" alt="Camiseta Esportiva" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Esportiva</h3>
+                        <p class="product-price">R$ 79,99</p>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="../images/image02Camisas.webp" alt="Camiseta Premium" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camiseta Premium</h3>
+                        <p class="product-price">R$ 99,99</p>
+                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Dark mode toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        let isDark = false;
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+    </script>
+</body>
+</html>

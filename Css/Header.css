@@ -1,0 +1,62 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#CtnPesquisa {
+    display: flex;
+    align-self: flex-end;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+}
+
+#BarraDePesquisa {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#BarraBotao {
+    background-color: rgb(255,140,0);
+    color: white;   
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+nav {
+    margin-right: auto;
+}
+
+#BarraBotao i {
+    font-size: 16px;
+}
+#BarraBotao i{
+    font-size: 16px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    margin-right: 20px;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+

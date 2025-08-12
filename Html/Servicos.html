@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../Css/Body.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="../Html/PaginaPrincipal.html"><img src="../images/logo.jpeg" alt="Logo" class="logo"></a></li>
+                    <li><a href="../Html/PaginaPrincipal.html">Início</a></li>
+                    <li><a href="../Html/Produtos.html">Produtos</a></li>
+                    <li><a href="../Html/Carrinho.html">Carrinho</a></li>
+                    <li><a href="../Html/Servicos.html">Serviços</a></li>
+                    <li><a href="../Html/Conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar produtos..." id="BarraDePesquisa">
+                <button id="BarraBotao">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Conteúdo da página de serviços -->
+        <section class="services-section">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <img src="../imagesServicos/de500a800.png" alt="Serviço de 500 a 800" class="service-image">
+            <h3 class="service-title">Serviço de 500 a 800</h3>
+            <p class="service-description">Descrição do serviço de 500 a 800</p>
+        </div>
+        <div class="service-card">
+            <img src="../imagesServicos/de1000a1299.png" alt="Serviço de 1000 a 1299" class="service-image">
+            <h3 class="service-title">Serviço de 1000 a 1299</h3>
+            <p class="service-description">Descrição do serviço de 1000 a 1299</p>
+        </div>
+        <div class="service-card">
+            <img src="../imagesServicos/de1300a1600.png" alt="Serviço de 1300 a 1600" class="service-image">
+            <h3 class="service-title">Serviço de 1300 a 1600</h3>
+            <p class="service-description">Descrição do serviço de 1300 a 1600</p>
+        </div>
+        <div class="service-card">
+            <img src="../imagesServicos/de2000a2500.png" alt="Serviço de 2000 a 2500" class="service-image">
+            <h3 class="service-title">Serviço de 2000 a 2500</h3>
+            <p class="service-description">Descrição do serviço de 2000 a 2500</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Dark mode toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+        let isDark = false;
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+    </script>
+</body>
+</html>
