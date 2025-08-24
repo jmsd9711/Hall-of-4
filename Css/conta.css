@@ -1,31 +1,32 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.SecaodeCadastro{
+.SecaodeCadastro {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.FormularioDeCadastro{
+.FormularioDeCadastro {
     background-color: #f1f1f1;
     padding: 30px;
     border-radius: 10px;
     width: 400px;
 }
-.informacoes{
+
+.informacoes {
     margin-bottom: 20px;
 }
 
-.informacoes label{
+.informacoes label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.informacoes input{
+.informacoes input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -33,7 +34,7 @@ body{
     font-size: 16px;
 }
 
-.btnCadastro{
+.btnCadastro {
     background-color: rgb(255,140,0);
     color: white;
     border: none;

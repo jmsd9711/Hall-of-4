@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="../Css/Body.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../Css/produtos.css">
+
+    <link rel="stylesheet" href="../Css/global.css">
+    <link rel="stylesheet" href="../Css/Header.css">
 </head>
 <body>
     <header>
@@ -31,39 +35,35 @@
 
     <main>
         <!-- Conteúdo da página de produtos -->
-        <section class="products-section">
-            <h2 class="section-title">Nossos Produtos</h2>
+        <section class="featured-products">
+            <h2 class="section-title">Produtos em Destaque</h2>
             <div class="products-grid">
-                <div class="product-card">
-                    <img src="../images/image01Tenis.webp" alt="Tênis Esportivo" class="product-image">
+                <div class="product-card" data-aos="fade-up">
+                    <img src="../images/image02Tenis.webp" alt="Tênis Court Vision Low Next" class="product-image">
                     <div class="product-info">
-                        <h3 class="product-title">Tênis Esportivo</h3>
-                        <p class="product-price">R$ 99,99</p>
-                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+                        <h3 class="product-title">Tênis Court Vision Low Next</h3>
+                        <p class="product-price">R$ 599,99</p>
                     </div>
                 </div>
-                <div class="product-card">
-                    <img src="../images/image02Tenis.webp" alt="Tênis Premium" class="product-image">
+                <div class="product-card" data-aos="fade-up">
+                    <img src="../images/image01Tenis.webp" alt="Tênis Air force" class="product-image">
                     <div class="product-info">
-                        <h3 class="product-title">Tênis Premium</h3>
+                        <h3 class="product-title">Tênis Air force</h3>
+                        <p class="product-price">R$ 799,99</p>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up">
+                    <img src="../images/image02Camisas.webp" alt="Camisas Dry fit" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Camisas Dry fit</h3>
+                        <p class="product-price">R$ 99,99</p>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up">
+                    <img src="../images/image03Tenis.webp" alt="Tênis Court Vision" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-title">Tênis Court Vision</h3>
                         <p class="product-price">R$ 299,99</p>
-                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="../images/image01Camisas.webp" alt="Camiseta Esportiva" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-title">Camiseta Esportiva</h3>
-                        <p class="product-price">R$ 79,99</p>
-                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img src="../images/image02Camisas.webp" alt="Camiseta Premium" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-title">Camiseta Premium</h3>
-                        <p class="product-price">R$ 99,99</p>
-                        <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -91,5 +91,4 @@
         });
     </script>
 </body>
-
 </html>
