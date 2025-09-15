@@ -103,28 +103,5 @@
         </section>
     </main>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // inicializa a biblioteca aos
-        AOS.init();
-
-        // botao modo escuro
-        const themeToggle = document.querySelector('.theme-toggle');
-        const body = document.body;
-        let isDark = false;
-
-        themeToggle.addEventListener('click', () => {
-            isDark = !isDark;
-            body.setAttribute('data-theme', isDark ? 'dark' : 'light');
-            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        });
-
-        // funcinalidade de procura
-        const searchInput = document.querySelector('.search-container input');
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            // onde vai ficar a logica para procurar
-        });
-    </script>
 </body>
 </html>

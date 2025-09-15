@@ -63,26 +63,5 @@
             </div>
         </section>
     </main>
-
-    <div class="theme-toggle">
-        <i class="fas fa-moon"></i>
-    </div>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init();
-
-        // Dark mode toggle
-        const themeToggle = document.querySelector('.theme-toggle');
-        const body = document.body;
-        let isDark = false;
-
-        themeToggle.addEventListener('click', () => {
-            isDark = !isDark;
-            body.setAttribute('data-theme', isDark ? 'dark' : 'light');
-            themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
-        });
-    </script>
 </body>
 </html>
