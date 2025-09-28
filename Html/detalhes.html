@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/detalhes.css">
+    <link rel="stylesheet" href="../Css/global.css">
+    <link rel="stylesheet" href="../Css/Header.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="../Html/PaginaPrincipal.html"><img src="../images/logo.jpeg" alt="Logo" class="logo"></a></li>
+                    <li><a href="../Html/PaginaPrincipal.html">Início</a></li>
+                    <li><a href="../Html/Produtos.html">Produtos</a></li>
+                    <li><a href="../Html/Carrinho.html">Carrinho</a></li>
+                    <li><a href="../Html/Servicos.html">Serviços</a></li>
+                    <li><a href="../Html/Conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar produtos..." id="BarraDePesquisa">
+                <button id="BarraBotao">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="product-detail-main">
+        <button class="back-button" onclick="window.location.href='../Html/Produtos.html'">
+            <i class="fas fa-arrow-left"></i> Voltar aos Produtos
+        </button>
+
+        <section class="product-detail-section">
+            <div class="product-detail-container">
+                <img id="detail-product-image" src="" alt="Produto" class="detail-image">
+                <div class="detail-info">
+                    <h1 id="detail-product-title" class="detail-title"></h1>
+                    <p id="detail-product-price" class="detail-price"></p>
+                    <p id="detail-product-description" class="detail-description"></p>
+                    <button id="add-to-cart-detail" class="add-to-cart-detail">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../Js/detalhes-produto.js"></script>
+    <script src="../Js/detalhes.js"></script>
+</body>
+</html>
