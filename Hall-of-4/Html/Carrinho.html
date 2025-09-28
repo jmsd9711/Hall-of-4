@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../Css/Body.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/carrinho.css">
+    <link rel="stylesheet" href="../Css/paginaprincipal.css">
+    <link rel="stylesheet" href="../Css/global.css">
+    <link rel="stylesheet" href="../Css/Header.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="../Html/PaginaPrincipal.html"><img src="../images/logo.jpeg" alt="Logo" class="logo"></a></li>
+                    <li><a href="../Html/PaginaPrincipal.html">Início</a></li>
+                    <li><a href="../Html/Produtos.html">Produtos</a></li>
+                    <li><a href="../Html/Carrinho.html">Carrinho</a></li>
+                    <li><a href="../Html/Servicos.html">Serviços</a></li>
+                    <li><a href="../Html/Conta.html">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Pesquisar produtos..." id="BarraDePesquisa">
+                <button id="BarraBotao">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Conteúdo da página do carrinho -->
+        <section class="cart-section">
+            <h2 class="section-title">Carrinho de Compras</h2>
+            <div class="cart-items">
+                <!-- Itens do carrinho -->
+                <div class="cart-item">
+                    <img src="../images/image01Tenis.webp" alt="Tênis Esportivo" class="cart-item-image">
+                    <div class="cart-item-info">
+                        <h3 class="cart-item-title">Tênis Esportivo</h3>
+                        <p class="cart-item-price">R$ 99,99</p>
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" class="quantity-input" value="1">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-item-btn">Remover</button>
+                </div>
+                <!-- Adicionar mais itens do carrinho -->
+            </div>
+            <div class="cart-summary">
+                <h3>Resumo do Pedido</h3>
+                <p>Subtotal: R$ 99,99</p>
+                <p>Frete: R$ 10,00</p>
+                <p>Total: R$ 109,99</p>
+                <button class="checkout-btn">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
